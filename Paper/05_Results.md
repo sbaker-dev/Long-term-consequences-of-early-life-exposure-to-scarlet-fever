@@ -3,12 +3,9 @@
 
 ## Results
 
-Table 1 reports the characteristics of our cohort that pass our sample selection criteria. We defined heart disease from
-ICD9 and ICD10 codes^[@Carter2019]^ (See supplementary information). Given the S. pyogenes effects multiple levels of the heart^[@Nizet2018]^, we investigated the association of scarlet fever with multiple sub-categories of heart disease. We included RHD as a positive control, as we know these individuals will have been infected as RHD is a known complication of untreated infections via developed into ARF. Given that ARF and RHD damage often is valvular, mostly involving the mitral valve^[@Sika-Paotonu2016]^, we also include vascular disease. 
+Table 1 reports the characteristics of our cohort that pass our sample selection criteria. We defined heart disease from ICD9 and ICD10 codes^[@Carter2019]^ (See supplementary information). Given the S. pyogenes effects multiple levels of the heart^[@Nizet2018]^, we investigated the association of scarlet fever with multiple sub-categories of heart disease. We included RHD as a positive control, as we know these individuals will have been infected as RHD is a known complication of untreated infections via developed into ARF. Given that ARF and RHD damage often is valvular, mostly involving the mitral valve^[@Sika-Paotonu2016]^, we also include vascular disease. 
 
 **Table 1.** Characteristics of study participants passing sample selection criteria
-
-**UPDATE THE TABLE**
 
 [TABLE 1 HERE]
 
@@ -28,6 +25,6 @@ Positive associations are found between IHD and additional case of scarlet fever
 
 Standard deviation change associations for educational attainment and fluid intelligence are shown in figure 4. We found little evidence that an additional case of scarlet fever each year on average by age one (0.03, 95%CI: -0.03; 0.10), by age five (0.02, 95%CI: -0.12; 0.16) or by age ten (0.10, 95%CI: -0.13; 0.32) was associated with education attainment.  We did find evidence that each additional case of scarlet fever per 100 individuals by age one was associated with a 0.13 (95%CI: -0.23; -0.04) standard deviation lower score on the fluid intelligence tests. The point estimates remain negative and roughly unchanged as we investigate exposure by the age of five (-0.16, 95%CI -0.39; 0.08) and the age of ten (-0.17, 95%CI: -0.54; 0.19) but the standard errors increased. 
 
-**Figure 4.** Standard deviation change associations of an additional case of regional incidence of scarlet fever by age age per 100 individuals on standardised outcomes
+**Figure 4.** Standard deviation change associations of an additional case of regional incidence of scarlet fever by age per 100 individuals on standardised outcomes
 
 [Figure 4 HERE]
