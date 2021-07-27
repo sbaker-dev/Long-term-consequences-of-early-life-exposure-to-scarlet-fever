@@ -1,0 +1,90 @@
+Links:
+  Columns:
+    '0': true
+    '1': false
+  Rows:
+    '0': true
+    '1': true
+    '2': true
+    '3': true
+    '4': true
+    '5': true
+    '6': true
+    '7': true
+    '8': true
+Positions:
+  0-0:
+    Col: 0
+    Row: 0
+    Text: 'UK Biobank Population
+
+
+      N = 502 488'
+  0-2:
+    Col: 0
+    Row: 2
+    Text: 'UK Biobank Population not in
+
+      Scotland
+
+
+      N = 463 000'
+  0-4:
+    Col: 0
+    Row: 4
+    Text: 'UK Biobank Population that can
+
+      be geolocated at birth
+
+
+      N = 405 201'
+  0-6:
+    Col: 0
+    Row: 6
+    Text: 'UK Biobank Population post
+
+      introduction of penicillin
+
+
+      N = 283 024'
+  0-8:
+    Col: 0
+    Row: 8
+    Text: 'UK Biobank Population Analysis
+
+      Sample
+
+
+      N = 241 685'
+  1-1:
+    Col: 1
+    Row: 1
+    Text: 'Born in Scotland
+
+
+      N = 39 488'
+  1-3:
+    Col: 1
+    Row: 3
+    Text: 'No or invalid birth
+
+      coordinates
+
+
+      N = 57 799'
+  1-5:
+    Col: 1
+    Row: 5
+    Text: 'Born before June 1946
+
+
+      N = 122 177'
+  1-7:
+    Col: 1
+    Row: 7
+    Text: 'Lacks 10 years of exposure
+
+      data or born after 1963
+
+
+      N = 41 339'

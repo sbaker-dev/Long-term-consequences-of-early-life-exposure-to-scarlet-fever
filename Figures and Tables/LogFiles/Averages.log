@@ -1,0 +1,739 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log: 
+  log type:  text
+ opened on:  26 Jul 2021, 16:03:35
+
+. foreach y of varlist $y_list{
+  2.         foreach exp of varlist $scarlet_average{
+  3.                 reghdfe `y' `exp' gender, absorb(i.mob i.sepyob i.dfe) cluster(dfe)
+  4.         }
+  5. }
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =      23.93
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0076
+                                                  Adj R-squared   =     0.0015
+                                                  Within R-sq.    =     0.0002
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.0588
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          rd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |   .0005275    .002093     0.25   0.801    -.0035781    .0046331
+      gender |    .001579   .0002287     6.90   0.000     .0011304    .0020277
+       _cons |   .0027162   .0002693    10.09   0.000      .002188    .0032445
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =      23.84
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0076
+                                                  Adj R-squared   =     0.0015
+                                                  Within R-sq.    =     0.0002
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.0588
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          rd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |    .001518   .0047508     0.32   0.749    -.0078011    .0108371
+      gender |   .0015793   .0002287     6.90   0.000     .0011306    .0020279
+       _cons |   .0026265   .0004843     5.42   0.000     .0016765    .0035765
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =      23.97
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0076
+                                                  Adj R-squared   =     0.0015
+                                                  Within R-sq.    =     0.0002
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.0588
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          rd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |  -.0011526   .0072271    -0.16   0.873    -.0153292     .013024
+      gender |   .0015787   .0002287     6.90   0.000       .00113    .0020274
+       _cons |   .0028704   .0006022     4.77   0.000     .0016891    .0040518
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     102.64
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0082
+                                                  Adj R-squared   =     0.0021
+                                                  Within R-sq.    =     0.0008
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.0907
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+           v |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |  -.0017883   .0027368    -0.65   0.514    -.0071567    .0035802
+      gender |   .0051115   .0003568    14.32   0.000     .0044115    .0058114
+       _cons |   .0062446   .0003474    17.97   0.000     .0055632    .0069261
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     103.11
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0083
+                                                  Adj R-squared   =     0.0021
+                                                  Within R-sq.    =     0.0008
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.0907
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+           v |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |  -.0077122   .0073183    -1.05   0.292    -.0220678    .0066435
+      gender |   .0051101    .000357    14.32   0.000     .0044099    .0058103
+       _cons |   .0068025    .000741     9.18   0.000     .0053491     .008256
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     102.67
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0082
+                                                  Adj R-squared   =     0.0021
+                                                  Within R-sq.    =     0.0008
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.0907
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+           v |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |  -.0115685   .0113103    -1.02   0.307    -.0337549    .0106178
+      gender |   .0051098   .0003569    14.32   0.000     .0044098    .0058098
+       _cons |   .0069818   .0009283     7.52   0.000     .0051607    .0088028
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     602.19
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0179
+                                                  Adj R-squared   =     0.0119
+                                                  Within R-sq.    =     0.0085
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.1270
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         ami |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |   .0051168   .0041887     1.22   0.222    -.0030998    .0133334
+      gender |   .0236032   .0006808    34.67   0.000     .0222677    .0249387
+       _cons |   .0054905   .0005644     9.73   0.000     .0043834    .0065976
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     601.67
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0179
+                                                  Adj R-squared   =     0.0119
+                                                  Within R-sq.    =     0.0085
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.1270
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         ami |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |   .0159395   .0093035     1.71   0.087    -.0023102    .0341893
+      gender |   .0236057   .0006808    34.67   0.000     .0222702    .0249412
+       _cons |      .0045   .0009727     4.63   0.000     .0025919    .0064082
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     601.11
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0179
+                                                  Adj R-squared   =     0.0119
+                                                  Within R-sq.    =     0.0085
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.1270
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         ami |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |   .0324127   .0149444     2.17   0.030     .0030977    .0617277
+      gender |   .0236077   .0006809    34.67   0.000     .0222721    .0249433
+       _cons |   .0034374   .0012709     2.70   0.007     .0009443    .0059305
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =    1348.38
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0336
+                                                  Adj R-squared   =     0.0277
+                                                  Within R-sq.    =     0.0160
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.2093
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         ihd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |   .0075842   .0065479     1.16   0.247    -.0052602    .0204286
+      gender |   .0536937   .0010342    51.92   0.000     .0516649    .0557224
+       _cons |   .0225207   .0008787    25.63   0.000     .0207969    .0242444
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =    1350.46
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0336
+                                                  Adj R-squared   =     0.0277
+                                                  Within R-sq.    =     0.0160
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.2093
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         ihd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |   .0261627   .0166093     1.58   0.115    -.0064181    .0587435
+      gender |    .053698   .0010343    51.92   0.000     .0516691    .0557269
+       _cons |   .0208017   .0017371    11.98   0.000     .0173943    .0242092
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =    1361.19
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0337
+                                                  Adj R-squared   =     0.0277
+                                                  Within R-sq.    =     0.0160
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.2093
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         ihd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |   .0724961   .0288845     2.51   0.012     .0158364    .1291559
+      gender |   .0537049   .0010345    51.92   0.000     .0516757    .0557341
+       _cons |   .0174868   .0024596     7.11   0.000      .012662    .0223116
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     114.72
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0094
+                                                  Adj R-squared   =     0.0032
+                                                  Within R-sq.    =     0.0012
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.1314
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+      stroke |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |   .0064049   .0039084     1.64   0.101    -.0012619    .0140716
+      gender |   .0093055   .0006146    15.14   0.000     .0080998    .0105111
+       _cons |   .0127458   .0005419    23.52   0.000     .0116828    .0138088
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     114.67
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0094
+                                                  Adj R-squared   =     0.0033
+                                                  Within R-sq.    =     0.0013
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.1314
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+      stroke |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |   .0192748   .0107944     1.79   0.074    -.0018996    .0404491
+      gender |   .0093084   .0006149    15.14   0.000     .0081023    .0105146
+       _cons |   .0115729   .0011248    10.29   0.000     .0093665    .0137794
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     114.67
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0094
+                                                  Adj R-squared   =     0.0032
+                                                  Within R-sq.    =     0.0012
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.1314
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+      stroke |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |   .0238759   .0170472     1.40   0.162    -.0095638    .0573156
+      gender |   .0093081   .0006148    15.14   0.000      .008102    .0105142
+       _cons |   .0115351    .001431     8.06   0.000      .008728    .0143421
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     616.04
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0412
+                                                  Adj R-squared   =     0.0353
+                                                  Within R-sq.    =     0.0059
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.4381
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         cvd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |  -.0054069   .0136572    -0.40   0.692     -.032197    .0213832
+      gender |   .0679399   .0019504    34.83   0.000      .064114    .0717659
+       _cons |   .2444697   .0018697   130.75   0.000     .2408021    .2481373
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     609.90
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0412
+                                                  Adj R-squared   =     0.0353
+                                                  Within R-sq.    =     0.0059
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.4381
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         cvd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |   .0077183   .0310431     0.25   0.804    -.0531758    .0686124
+      gender |   .0679433   .0019505    34.83   0.000     .0641172    .0717695
+       _cons |   .2430878   .0032526    74.74   0.000     .2367075    .2494681
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 6 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =    241,679
+Absorbing 3 HDFE groups                           F(   2,   1451) =     618.36
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0412
+                                                  Adj R-squared   =     0.0353
+                                                  Within R-sq.    =     0.0059
+Number of clusters (dfe)     =      1,452         Root MSE        =     0.4381
+
+                                (Std. Err. adjusted for 1,452 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+         cvd |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |  -.0110667   .0503366    -0.22   0.826    -.1098071    .0876736
+      gender |   .0679394   .0019511    34.82   0.000     .0641122    .0717666
+       _cons |   .2447518   .0042969    56.96   0.000      .236323    .2531807
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1452        1452           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 8 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    207,240
+Absorbing 3 HDFE groups                           F(   2,   1447) =    1069.21
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0420
+                                                  Adj R-squared   =     0.0351
+                                                  Within R-sq.    =     0.0128
+Number of clusters (dfe)     =      1,448         Root MSE        =     0.9823
+
+                                (Std. Err. adjusted for 1,448 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          eu |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |   .0336501   .0328181     1.03   0.305    -.0307261    .0980263
+      gender |   .2255228   .0048889    46.13   0.000     .2159327     .235113
+       _cons |  -.1039377   .0041283   -25.18   0.000    -.1120359   -.0958395
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1448        1448           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 8 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    207,240
+Absorbing 3 HDFE groups                           F(   2,   1447) =    1066.52
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0420
+                                                  Adj R-squared   =     0.0351
+                                                  Within R-sq.    =     0.0128
+Number of clusters (dfe)     =      1,448         Root MSE        =     0.9823
+
+                                (Std. Err. adjusted for 1,448 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          eu |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |   .0211445   .0724824     0.29   0.771    -.1210373    .1633263
+      gender |   .2255145   .0048897    46.12   0.000     .2159228    .2351063
+       _cons |  -.1022413   .0073624   -13.89   0.000    -.1166835   -.0877992
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1448        1448           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 8 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =    207,240
+Absorbing 3 HDFE groups                           F(   2,   1447) =    1067.18
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0420
+                                                  Adj R-squared   =     0.0351
+                                                  Within R-sq.    =     0.0128
+Number of clusters (dfe)     =      1,448         Root MSE        =     0.9823
+
+                                (Std. Err. adjusted for 1,448 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          eu |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |   .0973851   .1154807     0.84   0.399    -.1291423    .3239126
+      gender |   .2255273   .0048876    46.14   0.000     .2159397    .2351149
+       _cons |  -.1078831   .0092628   -11.65   0.000     -.126053   -.0897132
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1448        1448           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 49 singleton observations)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =     99,142
+Absorbing 3 HDFE groups                           F(   2,   1387) =     113.71
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0532
+                                                  Adj R-squared   =     0.0394
+                                                  Within R-sq.    =     0.0037
+Number of clusters (dfe)     =      1,388         Root MSE        =     0.9801
+
+                                (Std. Err. adjusted for 1,388 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          fi |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_1 |  -.1330922   .0476518    -2.79   0.005    -.2265697   -.0396147
+      gender |   .1185322   .0080893    14.65   0.000     .1026636    .1344009
+       _cons |   -.037195   .0068754    -5.41   0.000    -.0506823   -.0237078
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1388        1388           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 49 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =     99,142
+Absorbing 3 HDFE groups                           F(   2,   1387) =     110.08
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0531
+                                                  Adj R-squared   =     0.0394
+                                                  Within R-sq.    =     0.0036
+Number of clusters (dfe)     =      1,388         Root MSE        =     0.9802
+
+                                (Std. Err. adjusted for 1,388 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          fi |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+       sfa_5 |  -.1563264   .1182998    -1.32   0.187    -.3883922    .0757394
+      gender |   .1185872   .0080946    14.65   0.000     .1027083    .1344662
+       _cons |  -.0370256   .0128804    -2.87   0.004    -.0622928   -.0117584
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1388        1388           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+(dropped 49 singleton observations)
+(MWFE estimator converged in 6 iterations)
+
+HDFE Linear regression                            Number of obs   =     99,142
+Absorbing 3 HDFE groups                           F(   2,   1387) =     113.25
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.0531
+                                                  Adj R-squared   =     0.0394
+                                                  Within R-sq.    =     0.0036
+Number of clusters (dfe)     =      1,388         Root MSE        =     0.9802
+
+                                (Std. Err. adjusted for 1,388 clusters in dfe)
+------------------------------------------------------------------------------
+             |               Robust
+          fi |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+      sfa_10 |  -.1736096   .1867144    -0.93   0.353    -.5398826    .1926635
+      gender |   .1185948   .0080993    14.64   0.000     .1027066    .1344829
+       _cons |  -.0383435    .016798    -2.28   0.023    -.0712959   -.0053912
+------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+         mob |        12           0          12     |
+      sepyob |        19           1          18     |
+         dfe |      1388        1388           0    *|
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+
+. 
+. log close
+      name:  <unnamed>
+       log: 
+  log type:  text
+ closed on:  26 Jul 2021, 16:04:12
+--------------------------------------------------------------------------------------------------------------------------------------------------------
